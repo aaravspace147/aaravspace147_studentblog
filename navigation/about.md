@@ -23,3 +23,5 @@ I am from Jodhpur, Rajhistan in india.
  Food is yummy. 
 
 <img src="https://www.racquetpoint.com/cdn/shop/articles/what-is-badminton-racquet-point.jpg?v=1732071171" alt="ashuttlecock">
+
+<img src ="https://vmrw8k5h.tinifycdn.com/news/wp-content/uploads/2024/08/20240730_ASta_ASZ0107-1024x683.jpg" alt="water polo">
