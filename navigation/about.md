@@ -5,7 +5,6 @@ permalink: /about/
 ---
  
 
-
 <h1>About Me</h1>
 
 My name is Aarav Lohiya. I really like to eat new things. 
@@ -30,4 +29,4 @@ rachit is my sunshine
 
 <img src ="https://media.licdn.com/dms/image/v2/D5603AQEENy_CVPLN4w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718274986635?e=2147483647&v=beta&t=wCbFGgY3sP5f66GFL6v8JkEJ7IGT_w9dt3IlVr-kK4U" alt="rachit">
 
-<button>This is my favorite theme park
+<button>This is my favorite theme park</button>
