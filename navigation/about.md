@@ -29,4 +29,7 @@ rachit is my sunshine
 
 <img src ="https://media.licdn.com/dms/image/v2/D5603AQEENy_CVPLN4w/profile-displayphoto-shrink_200_200/profile-displayphoto-shrink_200_200/0/1718274986635?e=2147483647&v=beta&t=wCbFGgY3sP5f66GFL6v8JkEJ7IGT_w9dt3IlVr-kK4U" alt="rachit">
 
-<button>This is my favorite theme park</button>
+<a  href= "https://www.universalstudioshollywood.com/web/en/us/theme-park-ticket-deals?__source=PS_R80E6QTF7T_3098:NoOffer24TIXbos&gad_source=1&gclid=CjwKCAiAjeW6BhBAEiwAdKltMsNhKgcwbqq2jjJyzGFAV8NqAaPF1ud-fazepkd6hEJpw8jVYJV_uRoCP7wQAvD_BwE&gclsrc=aw.ds">
+        <button>This is my favorite theme park</button>
+</a>
+
