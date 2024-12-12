@@ -41,3 +41,4 @@ rollar coasters are the best.
         <button>This is my school</button>
 </a>
 
+<img src="https://cdn11.bigcommerce.com/s-w6fxwapwzi/products/2645/images/5507/2x3-india-flag-image__82911.1582736185.386.513.jpg?c=1" alt="india"> 
