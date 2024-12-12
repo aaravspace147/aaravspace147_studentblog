@@ -33,3 +33,11 @@ rollar coasters are the best.
         <button>This is my favorite theme park</button>
 </a>
 
+<a  href= "https://www.yelp.com/biz/veganic-thai-cafe-san-diego">
+        <button>This is my favorite restruant</button>
+</a>
+
+<a  href= "https://delnorte.powayusd.com/">
+        <button>This is my school</button>
+</a>
+
