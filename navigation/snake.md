@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: game
 title: snake game
 permalink: /snake/
 ---

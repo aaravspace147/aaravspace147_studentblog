@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title | default: site.title }}</title>
+
+    <style>
+        /* Global reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* Basic body styling */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #5e6e1f;
+            color: rgb(59, 19, 19);
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Disable scrolling */
+        }
+
+        /* Header styling */
+        header {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+        }
+
+        header h1 {
+            font-size: 2rem;
+        }
+
+        /* Main game container styling */
+        .game-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: calc(100vh - 100px); /* Full screen minus header and footer */
+            background-color: #222;
+            position: relative;
+        }
+
+        /* Footer styling */
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+
+        /* Optional: Add some styling for links, buttons, etc. */
+        a {
+            color: #6c9;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+<body class="game-page">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+
+    <div class="game-container">
+        {{ content }}
+    </div>
+
+    <footer>
+        <p>© {{ site.time | date: "%Y" }} AaravGaming</p>
+    </footer>
+</body>
+</html>
