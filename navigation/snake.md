@@ -17,7 +17,7 @@ permalink: /snake/
         display: none;
         border-style: solid;
         border-width: 10px;
-        border-color: #008000;
+        border-color: #FF0000;
     }
     canvas:focus{
         outline: none;
@@ -143,7 +143,6 @@ permalink: /snake/
         let snake_next_dir;
         let snake_speed;
         let food = {x: 0, y: 0};
-        let food2 = {x: 0 , y:0};
         let score;
         let wall;
         /* Display Control */
@@ -267,13 +266,6 @@ permalink: /snake/
                 addFood();
                 activeDot(food.x, food.y);
             }
-
-            if(checkBlock(snake[0].x, snake[0].y, food2.x, food2.y)){
-                snake[snake.length] = {x: snake[0].x, y: snake[0].y};
-                altScore(score + 2);
-                addFood2();
-                activeDot2(food2.x, food2.y); 
-            }
             // Repaint canvas
             ctx.beginPath();
             ctx.fillStyle = " rgb(255, 0, 0)";
@@ -284,7 +276,6 @@ permalink: /snake/
             }
             // Paint food
             activeDot(food.x, food.y);
-            activeDot2(food2.x, food2.y); 
             // Debug
             //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
             // Recursive call after speed delay, déjà vu
@@ -337,11 +328,7 @@ permalink: /snake/
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "FFFFFF";
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
-        }
-        let activeDot2 = function(x, y){
-            ctx.fillStyle = "FF0000";
+            ctx.fillStyle = "#FFFFFF";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
         }
         /* Random food placement */
@@ -355,16 +342,7 @@ permalink: /snake/
                 }
             }
         }
-        /* 2 point food */
-        let addFood2 = function(){
-            food2.x = Math.floor(Math.random() * ((canvas.width / BLOCK) - 1));
-            food2.y = Math.floor(Math.random() * ((canvas.height / BLOCK) - 1));
-            for(let i = 0; i < snake.length; i++){
-                if(checkBlock(food2.x, food2.y, snake[i].x, snake[i].y)){
-                    addFood2();
-                }
-            }
-        }
+        
         /* Collision Detection */
         /////////////////////////////////////////////////////////////
         let checkBlock = function(x, y, _x, _y){
@@ -387,7 +365,7 @@ permalink: /snake/
         let setWall = function(wall_value){
             wall = wall_value;
             if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#0080000";}
+            if(wall === 1){screen_snake.style.borderColor = "##00FF00";}
         }
     })();
 </script>
