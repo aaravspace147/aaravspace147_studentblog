@@ -143,7 +143,6 @@ permalink: /snake/
         let snake_next_dir;
         let snake_speed;
         let food = {x: 0, y: 0};
-        let food2 = {x: 0 , y:0};
         let score;
         let wall;
         /* Display Control */
@@ -268,12 +267,7 @@ permalink: /snake/
                 activeDot(food.x, food.y);
             }
 
-            if(checkBlock(snake[0].x, snake[0].y, food2.x, food2.y)){
-                snake[snake.length] = {x: snake[0].x, y: snake[0].y};
-                altScore(score + 2);
-                addFood2();
-                activeDot2(food2.x, food2.y); 
-            }
+            
             // Repaint canvas
             ctx.beginPath();
             ctx.fillStyle = " rgb(255, 0, 0)";
@@ -356,14 +350,7 @@ permalink: /snake/
             }
         }
         /* 2 point food */
-        let addFood2 = function(){
-            food2.x = Math.floor(Math.random() * ((canvas.width / BLOCK) - 1));
-            food2.y = Math.floor(Math.random() * ((canvas.height / BLOCK) - 1));
-            for(let i = 0; i < snake.length; i++){
-                if(checkBlock(food2.x, food2.y, snake[i].x, snake[i].y)){
-                    addFood2();
-                }
-            }
+        
         }
         /* Collision Detection */
         /////////////////////////////////////////////////////////////
