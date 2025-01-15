@@ -1,6 +1,6 @@
 ---
 layout: game
-title: snake game
+title: Snake
 permalink: /snake/
 ---
 
@@ -17,7 +17,7 @@ permalink: /snake/
         display: none;
         border-style: solid;
         border-width: 10px;
-        border-color: #008000;
+        border-color: #19d316;
     }
     canvas:focus{
         outline: none;
@@ -68,7 +68,7 @@ permalink: /snake/
     }
 </style>
 
-
+<h2>Snake</h2>
 <div class="container">
     <header class="pb-3 mb-4 border-bottom border-primary text-dark">
         <p class="fs-4">Score: <span id="score_value">0</span></p>
@@ -145,6 +145,7 @@ permalink: /snake/
         let food = {x: 0, y: 0};
         let score;
         let wall;
+        let blockwall;
         /* Display Control */
         /////////////////////////////////////////////////////////////
         // 0 for the game
@@ -266,11 +267,14 @@ permalink: /snake/
                 addFood();
                 activeDot(food.x, food.y);
             }
-
+            // Snake hits the border
+            let blockwall = function (){
+             ctx.fillStyle = "rgb()      
+            }
             
             // Repaint canvas
             ctx.beginPath();
-            ctx.fillStyle = " rgb(255, 0, 0)";
+            ctx.fillStyle = "rgb(255, 0, 0)";
             ctx.fillRect(0, 0, canvas.width, canvas.height);
             // Paint snake
             for(let i = 0; i < snake.length; i++){
@@ -278,7 +282,6 @@ permalink: /snake/
             }
             // Paint food
             activeDot(food.x, food.y);
-            activeDot2(food2.x, food2.y); 
             // Debug
             //document.getElementById("debug").innerHTML = snake_dir + " " + snake_next_dir + " " + snake[0].x + " " + snake[0].y;
             // Recursive call after speed delay, déjà vu
@@ -331,11 +334,7 @@ permalink: /snake/
         /* Dot for Food or Snake part */
         /////////////////////////////////////////////////////////////
         let activeDot = function(x, y){
-            ctx.fillStyle = "FFFFFF";
-            ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
-        }
-        let activeDot2 = function(x, y){
-            ctx.fillStyle = "FF0000";
+            ctx.fillStyle = "#FFFFFF";
             ctx.fillRect(x * BLOCK, y * BLOCK, BLOCK, BLOCK);
         }
         /* Random food placement */
@@ -348,9 +347,6 @@ permalink: /snake/
                     addFood();
                 }
             }
-        }
-        /* 2 point food */
-        
         }
         /* Collision Detection */
         /////////////////////////////////////////////////////////////
@@ -374,7 +370,7 @@ permalink: /snake/
         let setWall = function(wall_value){
             wall = wall_value;
             if(wall === 0){screen_snake.style.borderColor = "#606060";}
-            if(wall === 1){screen_snake.style.borderColor = "#0080000";}
+            if(wall === 1){screen_snake.style.borderColor = "#00FFFF";}
         }
     })();
 </script>
