@@ -2,8 +2,8 @@ title: Aarav Lohiya Blog
 description: "Class of 2028"
 owner_name: Aarav Lohiya
 github_username: aaravspace147
-github_repo: "AARAVSPACE147_STUDENTBLOG" 
-# baseurl: "/AARAVSPACE147_STUDENTBLOG"
+github_repo: "aaravspace147_studentblog" 
+baseurl: "/aaravspace147_studentblog"
 future: true
 # remote_theme: jekyll/minima
 minima:
