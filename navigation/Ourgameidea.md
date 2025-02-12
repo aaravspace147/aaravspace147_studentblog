@@ -17,7 +17,7 @@ The fat guy is one of the npc of out game. He is the one who we need to feed all
 
 <h3> The Hero Aarav Lohiya </h3>
 ![The hero aaravleft](assets/images/aaravleftrun.gif)
-![The hero aaravleft](assets/images/aaravleftrun.gif)
+![The hero aaravleft](assets/images/aaravrightrun.gif)
 ![The hero aaravidol](assets/images/New Piskel.gif)
 The hero aarav is a brave man aiming to finish the game. He is the player you will be playing with and will be the ome to collect the 5 foods.
 <h2> flowchart </h2>
