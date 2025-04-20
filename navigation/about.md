@@ -13,7 +13,7 @@ I play two sports consiting of Badminton and Water Polo.
 
 I have a Brother, Mother, and Father. My brother is annoying.
 
-My favorite cusine is italian. And I am single and alone. 
+My favorite cusine is italian.   
 
 I am from Jodhpur, Rajhistan in india.
 
